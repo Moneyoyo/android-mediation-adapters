@@ -23,3 +23,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "mediation-adapter"
 include(":applovinadapter")
+include(":admobadapter")
