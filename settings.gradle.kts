@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "applovin-adapter"
+rootProject.name = "mediation-adapter"
 include(":applovinadapter")

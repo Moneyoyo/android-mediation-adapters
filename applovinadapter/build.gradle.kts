@@ -29,6 +29,10 @@ android {
             proguardFiles("proguard-rules.pro")
             buildConfigField("String", "VERSION_NAME", "\"${version}\"")
         }
+        debug {
+            isMinifyEnabled = false
+            buildConfigField("String", "VERSION_NAME", "\"${version}-SNAPSHOT\"")
+        }
     }
 
     buildFeatures {
@@ -45,7 +49,7 @@ mavenPublishing {
     publishToMavenCentral()
     signAllPublications()
 
-    coordinates("com.moneyoyo", "applovin-adapter", version.toString())
+    coordinates("com.moneyoyo", "applovin-mediation", version.toString())
 
     configure(
         AndroidSingleVariantLibrary(
@@ -56,8 +60,8 @@ mavenPublishing {
     )
 
     pom {
-        name.set("Moneyoyo AppLovin Adapter")
-        description.set("AppLovin Adapter for Moneyoyo")
+        name.set("Moneyoyo AppLovin Mediation Adapter")
+        description.set("AppLovin Mediation Adapter for Moneyoyo")
         inceptionYear.set("2025")
         url.set("https://moneyoyo.com")
 
