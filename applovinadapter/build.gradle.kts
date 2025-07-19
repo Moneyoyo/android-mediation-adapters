@@ -93,5 +93,5 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
 
     api("com.applovin:applovin-sdk:[13,14)")
-    implementation("com.moneyoyo:ads-sdk:0.2.0")
+    implementation("com.moneyoyo:ads-sdk:0.5.0")
 }
