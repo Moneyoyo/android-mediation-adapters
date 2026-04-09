@@ -6,7 +6,7 @@ plugins {
 }
 
 ext {
-    version = "0.1.0"
+    version = "0.1.1"
 }
 
 android {
@@ -80,9 +80,9 @@ mavenPublishing {
         }
 
         scm {
-            connection.set("scm:git:git:github.com/Moneyoyo/android-applovin-mediation-adapter.git")
-            developerConnection.set("scm:git:ssh://github.com/Moneyoyo/android-applovin-mediation-adapter.git")
-            url.set("https://github.com/Moneyoyo/android-applovin-mediation-adapter")
+            connection.set("scm:git:git:github.com/Moneyoyo/android-mediation-adapter.git")
+            developerConnection.set("scm:git:ssh://github.com/Moneyoyo/android-mediation-adapter.git")
+            url.set("https://github.com/Moneyoyo/android-mediation-adapter")
         }
     }
 }
