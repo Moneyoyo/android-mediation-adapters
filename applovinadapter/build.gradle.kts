@@ -1,8 +1,10 @@
 import com.vanniktech.maven.publish.AndroidSingleVariantLibrary
+import com.vanniktech.maven.publish.JavadocJar
+import com.vanniktech.maven.publish.SourcesJar
 
 plugins {
     alias(libs.plugins.android.library)
-    id("com.vanniktech.maven.publish") version "0.34.0"
+    id("com.vanniktech.maven.publish") version "0.36.0"
 }
 
 ext {
@@ -11,7 +13,11 @@ ext {
 
 android {
     namespace = "com.moneyoyo.ads.applovinadapter"
-    compileSdk = 35
+    compileSdk {
+        version = release(36) {
+            minorApiLevel = 1
+        }
+    }
 
     defaultConfig {
         aarMetadata {
@@ -54,8 +60,8 @@ mavenPublishing {
     configure(
         AndroidSingleVariantLibrary(
             variant = "release",
-            sourcesJar = true,
-            publishJavadocJar = false,
+            sourcesJar = SourcesJar.Sources(),
+            javadocJar = JavadocJar.Empty(),
         )
     )
 
@@ -92,6 +98,6 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
-    api("com.applovin:applovin-sdk:[13,14)")
-    implementation("com.moneyoyo:ads-sdk:0.5.1")
+    api(libs.applovin.sdk)
+    implementation(libs.ads.sdk)
 }
