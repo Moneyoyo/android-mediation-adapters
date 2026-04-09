@@ -5,7 +5,7 @@ on:
       - 'applovin/v*'
 
 jobs:
-  build:
+  release:
     env:
       ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USER_NAME }}
       ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
