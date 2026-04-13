@@ -4,7 +4,7 @@ import com.vanniktech.maven.publish.SourcesJar
 
 plugins {
     alias(libs.plugins.android.library)
-    id("com.vanniktech.maven.publish") version "0.36.0"
+    alias(libs.plugins.maven.publish)
 }
 
 ext {
