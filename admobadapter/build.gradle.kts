@@ -98,6 +98,6 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
-    api(libs.applovin.sdk)
+    implementation(libs.play.services.ads.api)
     implementation(libs.ads.sdk)
 }

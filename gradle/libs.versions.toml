@@ -6,6 +6,7 @@ applovinSdk = "[13,14)"
 junit = "4.13.2"
 junitVersion = "1.3.0"
 espressoCore = "3.7.0"
+playServicesAdsApi = "25.1.0"
 
 [libraries]
 ads-sdk = { module = "com.moneyoyo:ads-sdk", version.ref = "adsSdk" }
@@ -13,6 +14,7 @@ applovin-sdk = { module = "com.applovin:applovin-sdk", version.ref = "applovinSd
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+play-services-ads-api = { group = "com.google.android.gms", name = "play-services-ads-api", version.ref = "playServicesAdsApi" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
