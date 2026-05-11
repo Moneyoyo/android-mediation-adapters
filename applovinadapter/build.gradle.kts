@@ -8,7 +8,7 @@ plugins {
 }
 
 ext {
-    version = "0.1.1"
+    version = "0.1.2"
 }
 
 android {
@@ -55,7 +55,7 @@ mavenPublishing {
     publishToMavenCentral(automaticRelease = true)
     signAllPublications()
 
-    coordinates("com.moneyoyo", "applovin-mediation", version.toString())
+    coordinates("com.moneyoyo.ads", "applovin-mediation-adapter", version.toString())
 
     configure(
         AndroidSingleVariantLibrary(

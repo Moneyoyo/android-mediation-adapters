@@ -55,7 +55,7 @@ mavenPublishing {
     publishToMavenCentral(automaticRelease = true)
     signAllPublications()
 
-    coordinates("com.moneyoyo", "applovin-mediation", version.toString())
+    coordinates("com.moneyoyo.ads", "admob-mediation-adapter", version.toString())
 
     configure(
         AndroidSingleVariantLibrary(
@@ -66,9 +66,9 @@ mavenPublishing {
     )
 
     pom {
-        name.set("Moneyoyo AppLovin Mediation Adapter")
-        description.set("AppLovin Mediation Adapter for Moneyoyo")
-        inceptionYear.set("2025")
+        name.set("Moneyoyo AdMob Mediation Adapter")
+        description.set("AdMob Mediation Adapter for Moneyoyo")
+        inceptionYear.set("2026")
         url.set("https://moneyoyo.com")
 
         developers {
