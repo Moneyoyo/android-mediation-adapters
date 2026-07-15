@@ -1,5 +1,5 @@
 [versions]
-adsSdk = "0.5.1"
+adsSdk = "0.5.2"
 agp = "9.1.0"
 mavenPublish = "0.36.0"
 applovinSdk = "[13,14)"
